@@ -6,6 +6,9 @@ const navItems = [
   { icon: "groups", label: "Team Sessions" },
   { icon: "insert_chart_outlined", label: "Usage Analytics" },
   { icon: "settings", label: "Settings" },
+
+
+  
 ];
 
 export default function Slider({ onNavigate }) {
