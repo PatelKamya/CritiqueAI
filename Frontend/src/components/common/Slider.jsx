@@ -6,9 +6,6 @@ const navItems = [
   { icon: "groups", label: "Team Sessions" },
   { icon: "insert_chart_outlined", label: "Usage Analytics" },
   { icon: "settings", label: "Settings" },
-
-
-  
 ];
 
 export default function Slider({ onNavigate }) {
@@ -124,7 +121,7 @@ export default function Slider({ onNavigate }) {
       <button
         type="button"
         onClick={() => setIsOpen((value) => !value)}
-        className="absolute left-0 top-6 z-20 flex h-10 w-5 -translate-x-0 items-center justify-center rounded-r-lg border border-l-0 border-white/10 bg-[#1b1c23] text-white/60 transition"
+        className="absolute left-0 top-6 z-20 flex h-10 w-5 -translate-x-0 items-center justify-center rounded-r-lg border border-l-0 border-white/10 bg-[#1b1c23] text-white/60 transition-all duration-300 ease-in-out"
         style={{ left: isOpen ? "240px" : "72px" }}
       >
         <span className="material-icons text-[14px]">

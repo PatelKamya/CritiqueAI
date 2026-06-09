@@ -177,21 +177,15 @@ export default function AuthScreen({ mode = "login", onNavigate }) {
         )}
 
         <div
-          className={`w-full rounded-[30px] border border-[#5f55e8]/75 bg-[#0f1015] shadow-[0_0_0_1px_rgba(125,101,255,0.16),0_28px_90px_rgba(0,0,0,0.55)] ${
-            isLogin
-              ? "max-w-[520px] p-5 sm:p-6"
-              : "max-w-[540px] p-4 sm:p-5"
-          }`}
+          className="w-full max-w-[540px] rounded-[30px] border border-[#5f55e8]/75 bg-[#0f1015] p-5 shadow-[0_0_0_1px_rgba(125,101,255,0.16),0_28px_90px_rgba(0,0,0,0.55)] sm:p-6"
         >
-          <div className={`flex items-center gap-4 ${isLogin ? "mb-6" : "mb-5"}`}>
-            <div
-              className={`flex items-center justify-center rounded-3xl border border-[#5260ff]/45 bg-[#182241] ${
-                isLogin ? "h-12 w-12" : "h-11 w-11"
-              }`}
+          <div className="mb-6 flex items-center gap-4">
+          <div
+            className="flex h-12 w-12 items-center justify-center rounded-3xl border border-[#5260ff]/45 bg-[#182241]"
+          >
+            <span
+              className="material-icons text-[20px] text-[#9ea9ff]"
             >
-              <span
-                className={`material-icons text-[#9ea9ff] ${isLogin ? "text-[20px]" : "text-[18px]"}`}
-              >
                 code
               </span>
             </div>
@@ -204,7 +198,7 @@ export default function AuthScreen({ mode = "login", onNavigate }) {
           </div>
 
           <div className="rounded-[28px] border border-white/8 bg-[#131419] p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.03)] sm:p-6">
-            <div className={`flex rounded-2xl border border-white/8 bg-[#0f1014] p-1.5 ${isLogin ? "mb-5" : "mb-4"}`}>
+            <div className="mb-5 flex rounded-2xl border border-white/8 bg-[#0f1014] p-1.5">
               <button
                 type="button"
                 onClick={() => onNavigate?.("login")}
@@ -230,10 +224,10 @@ export default function AuthScreen({ mode = "login", onNavigate }) {
             </div>
 
             <div>
-              <p className={`font-extrabold tracking-[-0.04em] text-[#ece7df] ${isLogin ? "text-[2rem]" : "text-[1.8rem]"}`}>
+              <p className="text-[2rem] font-extrabold tracking-[-0.04em] text-[#ece7df]">
                 {isLogin ? "Welcome back" : "Create account"}
               </p>
-              <p className={`text-sm text-white/48 ${isLogin ? "mt-1.5 leading-6" : "mt-1 leading-5"}`}>
+              <p className="mt-1.5 text-sm leading-6 text-white/48">
                 {isLogin
                   ? "Continue into your dashboard and resume active review sessions."
                   : "Set up your account and launch your first AI-assisted review workspace."}
@@ -254,7 +248,7 @@ export default function AuthScreen({ mode = "login", onNavigate }) {
 
             <form
               onSubmit={isLogin ? handleLogin : handleRegister}
-              className={`space-y-3 ${isLogin ? "mt-6" : "mt-5"}`}
+              className="mt-6 space-y-3"
             >
               {!isLogin && (
                 <div className="grid gap-3 sm:grid-cols-2">
@@ -385,7 +379,7 @@ export default function AuthScreen({ mode = "login", onNavigate }) {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full rounded-2xl bg-[#1477f8] px-5 text-sm font-extrabold text-white shadow-[0_16px_40px_rgba(20,119,248,0.34)] transition hover:bg-[#2b86fa] disabled:cursor-not-allowed disabled:opacity-70 ${isLogin ? "py-3.5" : "py-3"}`}
+                className="w-full rounded-2xl bg-[#1477f8] px-5 py-3.5 text-sm font-extrabold text-white shadow-[0_16px_40px_rgba(20,119,248,0.34)] transition hover:bg-[#2b86fa] disabled:cursor-not-allowed disabled:opacity-70"
               >
                 {isSubmitting
                   ? isLogin
@@ -397,7 +391,7 @@ export default function AuthScreen({ mode = "login", onNavigate }) {
               </button>
             </form>
 
-            <div className={`flex items-center gap-4 ${isLogin ? "my-5" : "my-4"}`}>
+            <div className="my-5 flex items-center gap-4">
               <div className="h-px flex-1 bg-white/8" />
               <span className="text-xs font-bold uppercase tracking-[0.18em] text-white/24">
                 Or continue with
@@ -417,7 +411,7 @@ export default function AuthScreen({ mode = "login", onNavigate }) {
               ))}
             </div>
 
-            <p className={`text-center text-sm text-white/42 ${isLogin ? "mt-5" : "mt-4"}`}>
+            <p className="mt-5 text-center text-sm text-white/42">
               {isLogin ? "Need an account?" : "Already have an account?"}{" "}
               <button
                 type="button"

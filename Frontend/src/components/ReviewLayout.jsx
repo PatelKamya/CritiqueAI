@@ -74,7 +74,7 @@ export default function ReviewLayout({ onNavigate }) {
       />
 
       <div
-        className="h-screen overflow-hidden bg-[#09090d] p-2 text-white sm:p-3"
+        className="h-screen overflow-hidden bg-[#09090d] p-3 text-white sm:p-4"
         style={{
           fontFamily: "'DM Sans', sans-serif",
           backgroundImage:
@@ -82,7 +82,7 @@ export default function ReviewLayout({ onNavigate }) {
         }}
       >
         <div
-          className="relative flex h-[calc(100vh-1rem)] overflow-hidden rounded-[24px] border border-[#5f55e8] bg-[#0c0d11] shadow-[0_0_0_1px_rgba(125,101,255,0.25),0_30px_80px_rgba(0,0,0,0.55)] sm:h-[calc(100vh-1.5rem)]"
+          className="relative flex h-[calc(100vh-1.5rem)] overflow-hidden rounded-[24px] border border-[#5f55e8] bg-[#0c0d11] shadow-[0_0_0_1px_rgba(125,101,255,0.25),0_30px_80px_rgba(0,0,0,0.55)] sm:h-[calc(100vh-2rem)]"
           style={{
             backgroundImage:
               "radial-gradient(circle at right top, rgba(90,81,225,0.12), transparent 24%), linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0))",
@@ -92,8 +92,8 @@ export default function ReviewLayout({ onNavigate }) {
 
           <div className="custom-scrollbar flex min-h-0 min-w-0 flex-1 flex-col overflow-y-auto xl:flex-row">
             <main className="min-w-0 flex-1 border-b border-white/6 px-5 py-5 xl:border-b-0 xl:border-r xl:border-white/6 xl:px-7 xl:py-6">
-              <div className="max-w-5xl">
-                <header className="mb-6 ml-5">
+              <div className="mx-auto max-w-5xl">
+                <header className="mb-6">
                   <h1 className="text-[30px] font-extrabold leading-tight tracking-[-0.04em] text-[#ece7df] sm:text-[44px]">
                     Instant AI PR Reviews
                   </h1>

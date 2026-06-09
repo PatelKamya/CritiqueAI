@@ -11,6 +11,9 @@ OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 
 async def review_with_ai(system_prompt: str, user_code: str, language: str) -> dict:
+    if not settings.OPENROUTER_API_KEY:
+        raise Exception("OPENROUTER_API_KEY is not configured on the server.")
+
     headers = {
         "Authorization": f"Bearer {settings.OPENROUTER_API_KEY}",
         "Content-Type": "application/json",
