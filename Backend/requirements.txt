@@ -1,0 +1,11 @@
+fastAPI
+uvicorn
+sqlalchemy
+pydantic-settings
+passlib[bcrypt]
+python-jose
+email-validator
+psycopg2-binary
+python-multipart
+bcrypt==4.0.1
+httpx

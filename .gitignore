@@ -1,0 +1,25 @@
+# Environment files
+.env
+*.env
+
+
+Backend/.env
+
+Frontend/.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Node.js
+node_modules/
+
+# Build files
+dist/
+build/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log

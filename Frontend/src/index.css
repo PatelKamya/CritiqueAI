@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(151, 166, 255, 0.42) transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(151, 166, 255, 0.68) 0%,
+    rgba(86, 95, 177, 0.85) 100%
+  );
+  border-radius: 999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(177, 189, 255, 0.82) 0%,
+    rgba(112, 124, 217, 0.95) 100%
+  );
+}
+
+.custom-scrollbar::-webkit-scrollbar-corner {
+  background: transparent;
+}
